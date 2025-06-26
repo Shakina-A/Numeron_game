@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+    padding: 100px;
+    background-image: url("https://img.freepik.com/free-psd/3d-rendering-questions-background_23-2151455632.jpg?semt=ais_items_boosted&w=740"); 
+    background-size: cover;        
+    background-repeat: no-repeat;   
+    background-position: center;    
+}
+
+.timer-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 80px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.number-box {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    background-color: white;
+}
+
+.relation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 50;
+}
+
+#game-over-text {
+    width: 50%;
+    max-width: 500px;
+}
+
+#score-box {
+    font-size: 6vw;
+    border: 1px solid white;
+    padding: 2vw;
+}

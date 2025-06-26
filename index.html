@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess the Relation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Timer box -->
+        <div class="timer-box" id="timer"></div>
+
+        <!-- Title -->
+        <h1 class="title">Guess the relation</h1>
+
+        <!-- Main boxes and symbols -->
+        <div class="main-section">
+            <div class="number-box" id="leftNumber">1</div><br><br>
+            <div class="question-mark">?</div><br>
+            <div class="number-box" id="rightNumber">2</div><br>
+        </div>
+
+        <!-- Relation buttons -->
+        <div class="relation-buttons">
+            <button onclick="checkRelation('>')">&gt;</button>
+            <button onclick="checkRelation('=')">=</button>
+            <button onclick="checkRelation('<')">&lt;</button>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
+
+<!--arrays fetch synchronaziation api
+arrays using higher oredr method
+array methods
+map reduce filter-->
