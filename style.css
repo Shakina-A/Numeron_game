@@ -1,10 +1,10 @@
 body {
     text-align: center;
     padding: 100px;
-    background-image: url("https://img.freepik.com/free-psd/3d-rendering-questions-background_23-2151455632.jpg?semt=ais_items_boosted&w=740"); 
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfmEAXJyjTKdqa8-BcNrO5ifBRhgYsWzg4g&s"); 
     background-size: cover;        
     background-repeat: no-repeat;   
-    background-position: center;    
+    background-position: center;  
 }
 
 .timer-box {
@@ -48,12 +48,24 @@ body {
 }
 
 #game-over-text {
-    width: 50%;
-    max-width: 500px;
+   color: lavender;
+   text-align:center;
+   font-size: 6vw;
+   padding-top: 0%;
 }
 
 #score-box {
-    font-size: 6vw;
-    border: 1px solid white;
-    padding: 2vw;
+    font-size: 4vw;
+    padding-bottom: 1vw;
+    padding-top: 0%;
+}
+
+.play {
+    width: 180px;
+    cursor: pointer;
+    background-color: rgb(255, 100, 17);
+}
+
+#play-button {
+    border-radius: 50%;
 }
