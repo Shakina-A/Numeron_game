@@ -1,38 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Guess the Relation</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numeron</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <div class="container">
-        <!-- Timer box -->
-        <div class="timer-box" id="timer"></div>
 
-        <!-- Title -->
-        <h1 class="title">Guess the relation</h1>
-
-        <!-- Main boxes and symbols -->
-        <div class="main-section">
-            <div class="number-box" id="leftNumber">1</div><br><br>
-            <div class="question-mark">?</div><br>
-            <div class="number-box" id="rightNumber">2</div><br>
-        </div>
-
-        <!-- Relation buttons -->
-        <div class="relation-buttons">
-            <button onclick="checkRelation('>')">&gt;</button>
-            <button onclick="checkRelation('=')">=</button>
-            <button onclick="checkRelation('<')">&lt;</button>
-        </div>
-    </div>
-
-    <script src="./index.js"></script>
+<body class="game-cover flex-centered">
+    <img id="logo" />
+    <img class="play" id="play-button" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwnhzeslOf9xz0D-8FPWu1OjASiF21CVpQew&s" alt="play-button" />
+    <script src="./app.js"></script>
 </body>
-</html>
 
-<!--arrays fetch synchronaziation api
-arrays using higher oredr method
-array methods
-map reduce filter-->
+</html>
