@@ -2,7 +2,7 @@ var scoreBoard = document.getElementById("score-board");
 var playagainbutton = document.getElementById("play-again-button");
 
 playagainbutton.onclick = () => {
-    location.href = "./index.html";
+    location.href = "./game.html";
 };
 
 // To get values from the URL

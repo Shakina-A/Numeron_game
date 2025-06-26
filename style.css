@@ -1,10 +1,13 @@
 body {
     text-align: center;
-    padding: 100px;
+    padding: 5vw; /* Responsive padding instead of fixed 100px */
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfmEAXJyjTKdqa8-BcNrO5ifBRhgYsWzg4g&s"); 
     background-size: cover;        
     background-repeat: no-repeat;   
-    background-position: center;  
+    background-position: center; 
+    box-sizing: border-box;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .timer-box {
@@ -19,6 +22,7 @@ body {
     line-height: 40px;
     border-radius: 5px;
     font-weight: bold;
+    z-index: 10;
 }
 
 .main-section {
@@ -27,6 +31,7 @@ body {
     align-items: center;
     gap: 30px;
     margin-bottom: 30px;
+    flex-wrap: wrap; /* allows wrapping on small screens */
 }
 
 .number-box {
@@ -44,14 +49,15 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    border-radius: 50;
+    border-radius: 50%; /* fixed invalid value (was: 50) */
+    flex-wrap: wrap; /* helps buttons not overflow on smaller screens */
 }
 
 #game-over-text {
-   color: lavender;
-   text-align:center;
-   font-size: 6vw;
-   padding-top: 0%;
+    color: lavender;
+    text-align: center;
+    font-size: 6vw;
+    padding-top: 0%;
 }
 
 #score-box {
