@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
 body {
     text-align: center;
     padding: 5vw; /* Responsive padding instead of fixed 100px */
@@ -10,9 +14,24 @@ body {
     background-size: cover;        
     background-repeat: no-repeat;   
     background-position: center; 
-    box-sizing: border-box;
     min-height: 100vh;
     overflow-x: hidden;
+}
+
+.title {
+    padding-bottom: 50px;
+}
+
+.question-mark{
+    font-size: 6vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .timer-box {
@@ -54,8 +73,24 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    border-radius: 50%; /* fixed invalid value (was: 50) */
-    flex-wrap: wrap; /* helps buttons not overflow on smaller screens */
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.relation-buttons button {
+    font-size: 2rem;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: #81d3ff;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.relation-buttons button:hover {
+    background-color: #1dacf8;
+    transform: scale(1.1);
 }
 
 #game-over-text {
@@ -69,6 +104,25 @@ body {
     font-size: 4vw;
     padding-bottom: 1vw;
     padding-top: 0%;
+    color: white;
+    position: absolute;
+    top: 0px;
+}
+
+#play-again-button {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: 2vw;
+    border-radius: 30%;
+    
+}
+
+.over {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/313/798/small_2x/game-over-technology-interface-hud-vector.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .play {
