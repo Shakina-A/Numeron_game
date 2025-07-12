@@ -1,3 +1,8 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     text-align: center;
     padding: 5vw; /* Responsive padding instead of fixed 100px */
@@ -67,11 +72,35 @@ body {
 }
 
 .play {
-    width: 180px;
     cursor: pointer;
     background-color: rgb(255, 100, 17);
 }
 
 #play-button {
     border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    .number-box {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .timer-box {
+        top: 5px;
+        right: 5px;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+
+    #game-over-text {
+        font-size: 8vw;
+    }
+
+    #score-box {
+        font-size: 6vw;
+    }
 }
