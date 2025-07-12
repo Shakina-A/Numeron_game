@@ -138,10 +138,21 @@ body {
     cursor: pointer;
 }
 
-.title, 
-#game-over-text, 
+.title {
+    font-size: clamp(1.2rem, 4vw, 2.5rem); /* adjusts between phone and desktop */
+    padding-bottom: 30px;
+}
+
+#game-over-text {
+    font-size: clamp(1.5rem, 6vw, 4rem);
+}
+
 #score-box {
-    font-size: 5vw; /* responsive text size */
+    font-size: clamp(1.2rem, 5vw, 3rem);
+}
+.relation-buttons button {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    padding: clamp(10px, 2vw, 15px) clamp(20px, 4vw, 25px);
 }
 
 @media (max-width: 600px) {
