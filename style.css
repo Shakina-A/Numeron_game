@@ -125,13 +125,23 @@ body {
     background-position: center;
 }
 
-.play {
-    cursor: pointer;
-    background-color: rgb(255, 100, 17);
-}
 
 #play-button {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
+    width:25vw;
+   max-width: 180px; /* optional, adjust size */
+    height: auto;
+    cursor: pointer;
+}
+
+.title, 
+#game-over-text, 
+#score-box {
+    font-size: 5vw; /* responsive text size */
 }
 
 @media (max-width: 600px) {
@@ -151,10 +161,16 @@ body {
     }
 
     #game-over-text {
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     #score-box {
-        font-size: 6vw;
+        font-size: 5vw;
+    }
+
+    .relation-buttons button {
+        font-size: 1.5rem;
+        padding: 10px 20px;
     }
 }
+
